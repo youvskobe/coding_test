@@ -12,8 +12,7 @@ $(Target):$(OBJS)
 
 %.d:%.cpp
 	set -e; rm -f $@;
-	$(CC) $< -MM -o $@ > $@.$$$$; \
-	sed 's/$*\.o[ :]*/$*\.o $*\.d : /g' < $@.$$$$ > $@; \
-	rm -f $@.$$$$
+	$(CC) $< -MM -o $@ 
 
 -include $(DEPS)
+

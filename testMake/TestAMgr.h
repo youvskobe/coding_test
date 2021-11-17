@@ -6,6 +6,7 @@
 #include <deque>
 using namespace std;
 
+
 class TestAMgr
 {
 public:

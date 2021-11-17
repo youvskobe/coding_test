@@ -1,6 +1,7 @@
 #ifndef __TESTA_DT_H__
 #define __TESTA_DT_H__
 using namespace std;
+
 struct TestA_DT
 {
 	int number;
@@ -14,7 +15,7 @@ struct TestA_DT
 
 	void setEmpty()
 	{
-		number= -1;
+		number= 0;
      	numberName[0] ='\0';
      	flag=0;
 	};
